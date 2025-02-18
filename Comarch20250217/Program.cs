@@ -53,6 +53,9 @@ internal class Program
                         OdczytajXY(out x, out y);
                         Console.WriteLine($"Wynik dzielenia {x} oraz {y} to {x / (float)y}");
                         break;
+                    case 5:
+                        kalkulator.Sortowanie();
+                        break;
                     default:
                         ShowError("Wybór jest nieprawidłowy!");
                         break;
@@ -88,6 +91,7 @@ internal class Program
         Console.WriteLine("2. Odejmowanie");
         Console.WriteLine("3. Mnożenie");
         Console.WriteLine("4. Dzielenie");
+        Console.WriteLine("5. Sortowanie liczb");
         Console.Write("Wybierz pozycję: ");
     }
 
