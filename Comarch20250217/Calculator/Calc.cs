@@ -19,6 +19,18 @@ namespace Comarch20250217.Calculator
             int wynik = x - y;
             return wynik;
         }
+        
+        internal float Dividy(int x, int y)
+        {
+            if (y == 0)
+            {
+                throw new ArgumentException(message: "Dzielnik nie może być zerem!", paramName: nameof(y));
+            }
+
+            float wynik = x / y;
+            return wynik;
+
+        }
 
         public void Sortowanie()
         {

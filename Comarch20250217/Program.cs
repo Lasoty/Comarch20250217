@@ -51,7 +51,14 @@ internal class Program
                         break;
                     case 4:
                         OdczytajXY(out x, out y);
-                        Console.WriteLine($"Wynik dzielenia {x} oraz {y} to {x / (float)y}");
+                        try
+                        {
+                            Console.WriteLine($"Wynik dzielenia {x} oraz {y} to {kalkulator.Dividy(x, y)}");
+                        }
+                        catch (Exception ex)
+                        {
+                            ShowError("Pamiętaj cholero! Nie dziel przez 0!");
+                        }
                         break;
                     case 5:
                         kalkulator.Sortowanie();
