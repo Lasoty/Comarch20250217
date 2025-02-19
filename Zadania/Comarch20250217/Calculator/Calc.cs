@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace Comarch20250217.Calculator
 {
-    internal class Calc
+    internal class Calc 
     {
+        public Calc(int z)
+        {
+            // ...
+        }
+
+        public Calc()
+        {
+            
+        }
+
         public int Add(int x, int y)
         {
             int wynik = x + y;

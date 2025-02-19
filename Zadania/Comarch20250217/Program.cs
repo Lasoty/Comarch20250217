@@ -21,6 +21,12 @@ internal class Program
     /// <seealso cref=""/>
     private static void Main(string[] args)
     {
+        Int32? liczba = null;
+        Int32 liczba2 = 0;
+        object o = liczba2;
+        int liczba3 = (Int32)o;
+
+
         ConsoleKeyInfo znakKontynuowac;
         do
         {
@@ -32,6 +38,7 @@ internal class Program
             if (czyMoznaOdczytac)
             {
                 int x, y;
+                
                 Calc kalkulator = new Calc();
 
                 switch (wybor)
